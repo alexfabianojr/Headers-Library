@@ -1,0 +1,122 @@
+@font-face {
+    src: url("fonts/balham/Balham.otf");
+    font-family: "balham";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1; /*garantia que nenhum elemento da página vai sobrepor o header*/
+    font-size: 16px;
+    transition: all 0.4s ease-out;
+}
+
+.max-header {
+    height: 100px;
+    background-color: #2574A9;
+}
+
+.min-header {
+    height: 80px;
+    background-color: #c5eff7;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas: 
+        "logo ... nav";
+    grid-template-columns: auto 1fr auto;
+    align-content: center;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo img {
+    transition: all 0.4s ease-out;
+}
+
+.max-logo img {
+    width: 320px;
+}
+
+.min-logo img {
+    width: 280px;
+}
+
+.nav-bar {
+    grid-area: nav;
+    display: grid;
+    align-content: center;
+}
+
+.nav-bar a {
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: all 0.4s ease-out;
+}
+
+.nav-bar ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+
+.max-nav a {
+    font-size: 1em;
+    color: #c5eff7;
+}
+
+.min-nav a {
+    font-size: 0.875em;
+    color: #2574A9;
+}
+
+.ghost {
+    width: 100%;
+    height: 100px;
+    background-color: #cae1f1;
+}
+
+main {
+    font-size: 20px; /*1em vai ser = a 20px dentro da main*/
+}
+
+main section {
+    display: grid;
+    justify-content: center; /*horizontal*/
+    align-content: center; /*vertical*/
+    font-family: "balham";
+    font-size: 2em;
+    color: #2574A9;
+}
+
+main section:nth-child(odd) {
+    height: 100vh;
+    background-color: #cae1f1;
+}
+
+main section:nth-child(even) {
+    height: 100vh;
+    background-color: #b7d5eb;
+}
+
