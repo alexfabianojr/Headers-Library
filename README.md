@@ -6,8 +6,9 @@
 > Check the latest first<br>
 > Please give me feedbacks and ideas for further studies<br>
 <br>
-Release ratio from first to last<br>
+Release ratio from last to first<br>
 
 
 27.07.2020 - Omnitech v1.0<br>
+25.07.2020 - Ecoworld v1.0<br>
 </P>
